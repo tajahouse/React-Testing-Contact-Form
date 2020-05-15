@@ -7,10 +7,12 @@ test("renders App without crashing", () => {
   render(<App />);
 });
 
-it('renders without crashing', () => {
+it('testing wrapper', () => {
   const wrapper = rtl.render( 
     <span className="greet">hello world</span>
   );
   const element = wrapper.queryByText(/hello/i);
+
+  expect(element).toBeTruthy();
 
 });
