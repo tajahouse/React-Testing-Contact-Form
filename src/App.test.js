@@ -15,5 +15,5 @@ it('testing wrapper', () => {
 
   expect(element).toBeTruthy();
   expect(element).toBeInTheDocument();
-
+  expect(element).toBeVisible();
 });
