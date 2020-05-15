@@ -1,5 +1,6 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import  { render } from '@testing-library/react';
+import * as rtl from "@testing-library/react";
 import App from "./App";
 
 test("renders App without crashing", () => {
@@ -7,7 +8,9 @@ test("renders App without crashing", () => {
 });
 
 it('renders without crashing', () => {
-  render(
+  const wrapper = rtl.render( 
     <span className="greet">hello world</span>
   );
+  const element = wrapper.queryByText(/hello/i);
+
 });
