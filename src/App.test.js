@@ -14,5 +14,6 @@ it('testing wrapper', () => {
   const element = wrapper.queryByText(/hello/i);
 
   expect(element).toBeTruthy();
+  expect(element).toBeInTheDocument();
 
 });
