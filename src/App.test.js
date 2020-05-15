@@ -21,7 +21,7 @@ it('contact form test', async () => {
 
 const {getByTestId, findByTestId} = render(<ContactForm/>);
 
-const expectedName = 'Ta';
+const expectedName = 'Taja';
 const expectedLastName = "House";
 const expectedEmail = "lady@email.com";
 const expectedMessage = "This is my message"
